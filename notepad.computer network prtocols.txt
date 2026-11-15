@@ -1,0 +1,34 @@
+📁 Scenario: Computer A se Computer B mein file send karni hai
+1. DHCP – Automatic IP Address
+
+Jab tum apna computer network/Wi-Fi se connect karte ho, to DHCP automatically tumhare computer ko IP address assign karta hai.
+
+Example:
+- Computer A: 192.168.1.10
+- Computer B: 192.168.1.20
+Yani DHCP tumhare computer ko network par apni pehchan ke liye IP address deta hai.
+
+2. IP – File ko destination tak pohanchana
+
+Ab tum Computer A se Computer B mein file send karna chahte ho. Tumhein Computer B ka IP address pata hona chahiye, taake data sahi destination ki taraf bheja ja sake.
+
+3. TCP – File ko safely deliver karna
+
+Jab tum TCP use karke file send karte ho, to TCP data ko chhote segments mein divide karta hai, taake data manage ho sake.
+- Har segment receiver tak pohanchta hai.
+- TCP ACK se confirm karta hai ke data receive hua.
+- Agar koi segment lost ho jaye, to TCP usay dobara send karta hai.
+- Receiver par data correct order mein arrange hota hai.
+Yani TCP reliable delivery provide karta hai.
+
+4. UDP – Fast data communication
+
+UDP data ko datagrams mein send karta hai. Is mein TCP ki tarah built-in confirmation aur retransmission nahi hoti.
+- Data fast aur low overhead ke saath send hota hai.
+- Agar koi packet lost ho jaye, UDP khud usay dobara send nahi karta.
+- Is liye 100% delivery guarantee nahi hoti.
+UDP live gaming, video calls aur streaming mein useful hota hai.
+
+5. DNS – Name ko IP mein convert karna
+
+Agar tumhein Computer B ka IP address yaad nahi, lekin uska hostname pata hai, to name-resolution service us naam ka IP address find karne mein help kar sakti hai.
